@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!-- <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+</head>
+<body>
+  <div id="app">Please wait...</div>
+  <script>
+    window.$docsify = {
+      name: '',
+      repo: '',
+	    loadSidebar: true,
+		 autoHeader: true,
+		coverpage: true,
+		onlyCover: false,
+		loadNavbar: true,
+		auto2top: true,
+		name: 'docsify WAs!',
+		themeColor: '#3F51B5',
+		 footer: {
+		  copy: '<span>Metapercept &copy; 2020</span>',
+		  auth: 'Jeet',
+		  pre: '<hr/>',
+		  style: 'text-align: right;',
+		  style: 'className'
+		},
+		 pagination: {
+			previousText: '上一章节',
+			nextText: '下一章节',
+			crossChapter: true,
+			crossChapterText: true,
+		  },
+		  
+		<!-- logo: 'logo.png' -->
+		<!-- alias: { -->
+		  <!-- '/.*/_sidebar.md': '/_sidebar.md' -->
+		<!-- } -->
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+  <script src="//unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+
+<script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
+<script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+  const gitalk = new Gitalk({
+    clientID: '704ad495ff9d1800b141',
+    clientSecret: 'f6df62d0142743351e86a72eeb88e537970dc16f',
+    repo: 'https://github.com/Jeet-Metapercept/MSF-Stats',
+    owner: 'https://github.com/Jeet-Metapercept',
+    admin: ['https://github.com/Jeet-Metapercept'],
+    // facebook-like distraction free mode
+    distractionFreeMode: false
+  })
+</script>
+</body>
+</html>
